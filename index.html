@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Gears</title>
+    <link rel="icon" href="/asset/images/logo.jfif">
+    <link rel="stylesheet" href="/src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer src="/main.js"></script>
+    <script defer src="/sweeper.js"></script>
+</head>
+
+<body class="bg-primary-color dark:bg-primary-color-dark">
+    <header id="header" 
+        class="fixed top-0 left-0 z-50 w-full border-b dark:bg-primary-color-dark border-yellow-gold bg-primary-color">
+        <nav class="container relative flex items-center justify-between h-14">
+            <div>
+                <a href="#">
+                    <h1 class="text-3xl font-batanges dark:text-white">
+                        Tech.<span class="text-yellow-gold">Gear</span>
+                    </h1>
+                </a>
+            </div>
+            <div id="mob-nav"
+                class="absolute top-0 left-0 hidden w-full border-b dark:bg-primary-color-dark dark:text-white bg-primary-color py-14 border-dark-gray md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+                <ul
+                    class="flex flex-col items-center gap-6 text-xl lg:gap-20 md:flex-row md:items-center font-coolvetica">
+                    <li><a href="#" class="duration-200 ease-in nav-links hover:text-yellow-gold">Home</a></li>
+                    <li><a href="#" class="duration-200 ease-in nav-links hover:text-yellow-gold">About us</a></li>
+                    <li><a href="#" class="duration-200 ease-in nav-links hover:text-yellow-gold">Gadgets</a>
+                    </li>
+                    <li><a href="#" class="duration-200 ease-in nav-links hover:text-yellow-gold">Review</a></li>
+                    <li><a href="#" class="duration-200 ease-in nav-links hover:text-yellow-gold">Contact</a>
+                    </li>
+                </ul>
+                <div class="absolute text-2xl duration-100 ease-in cursor-pointer top-2 right-4 hover:text-yellow-gold">
+                    <i id="close-icon" class="md:hidden ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div id="dark ">
+                    <i id="theme-btn"
+                        class="ml-4 text-xl duration-100 ease-in cursor-pointer dark:text-yellow-gold hover:text-yellow-gold ri-moon-fill"></i>
+                </div>
+                <div id="ham-icon">
+                    <i
+                        class="duration-100 ease-in cursor-pointer text-2 xl hover:text-yellow-gold ri-menu-2-line md:hidden"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!---------- Hero Section ---------->
+        <section id="home">
+            <div class="container flex flex-col items-center gap-10 text-center md:flex-row">
+                <div class="mx-auto md:basis-1/2 animate-lavitate">
+                    <img src="/assets/images/main11.png" alt="Elite Gaming Gear"
+                        class="w-60 md:w-full transform main-img scale-x-[-1]">
+                </div>
+                <div class="items-center md:basis-1/2 md:text-start lg:basis-3/5 main-div">
+                    <h1 class="w-auto text-xl dark:text-white font-guardians md:text-3xl">Elevate Your Play: Elite
+                        Gaming Gear Awaits!
+                    </h1>
+                    <div class="w-36 mt-1 h-[2px] bg-yellow-gold mx-auto md:mx-0 "></div>
+                    <p class="mt-5 text-sm md:text-xl font-louis-george-cafe dark:text-white">Unlock elite gaming gear:
+                        Immersive
+                        headphones, precision <br class="hidden md:inline">mice, and responsive keyboards. Elevate your
+                        gameplay and <br class="hidden md:inline">dominate every battle. Your
+                        starts now!</p>
+                    <div class="flex items-center mt-5 mb-10 text-sm text-center gap-9">
+                        <div>
+                            <i class="text-5xl text-yellow-gold ri-24-hours-line"></i>
+                            <h3 class="dark:text-white">24/7 Availability</h3>
+                        </div>
+                        <div>
+                            <i class="text-5xl text-yellow-gold ri-time-line"></i>
+                            <h3 class="dark:text-white">Timely Shipping</h3>
+                        </div>
+                        <div>
+                            <i class="text-5xl text-yellow-gold ri-star-line"></i>
+                            <h3 class="dark:text-white">Top-Quality</h3>
+                        </div>
+                    </div>
+                    <a class="px-6 py-4 text-sm font-black rounded-lg text-stroke font-louis-george-cafe hover:bg-yellow-500 bg-yellow-gold"
+                        href="#">Learn More</a>
+                </div>
+
+            </div>
+        </section>
+        <!---------- Catagory section ---------->
+        <section id="catagory">
+            <div class="container flex flex-col gap-5 md:flex-row">
+                <!-- 1 Catagory -->
+                <div class="flex py-1 overflow-hidden bg-white rounded-lg catagory dark:bg-primary-gray md:flex-1">
+                    <div class="relative basis-1/3">
+                        <img src="/assets/images/mouse5.png"
+                            class="absolute w-56 -bottom-6 -left-6 transform scale-x-[-1]" alt="">
+                    </div>
+                    <div>
+                        <div class="mb-2 ">
+                            <h4 class="text-xl font-coolvetica dark:text-white">
+                                Mouse
+                            </h4>
+                            <p class="text-sm font-outfit text-stroke dark:text-white">
+                                Enhance your gaming experience
+                        </div>
+                        <a href="" class="hover:text-black text-yellow-gold">Buy Now</a>
+                    </div>
+                </div>
+                <!-- 2 catagory -->
+                <div class="flex py-1 overflow-hidden bg-white rounded-lg catagory md:flex-1 dark:bg-primary-gray">
+                    <div class="relative basis-1/3 ">
+                        <img src="/assets/images/keyboard2.jpg" class="absolute w-72 -bottom-6 -left-6 " alt="">
+                    </div>
+                    <div>
+                        <div class="mb-2 ">
+                            <h4 class="text-xl font-coolvetica dark:text-white">
+                                Keyboards
+                            </h4>
+                            <p class="text-sm font-outfit text-stroke dark:text-white">
+                                Level up gaming immersion
+                            </p>
+                        </div>
+                        <a href="" class="hover:text-black text-yellow-gold">Buy Now</a>
+                    </div>
+                </div>
+                <!-- 3 catagory -->
+                <div class="flex py-1 overflow-hidden bg-white rounded-lg catagory md:flex-1 dark:bg-primary-gray">
+                    <div class="relative basis-1/3">
+                        <img src="/assets/images/headphone2.png"
+                            class="absolute w-20 -bottom-3 -left-2 transform scale-x-[-1]" alt="">
+                    </div>
+                    <div>
+                        <div class="mb-2 ">
+                            <h4 class="text-xl font-coolvetica dark:text-white">
+                                Heaphones
+                            </h4>
+                            <p class="text-sm font-outfit text-stroke dark:text-white">
+                                Elevate your gaming thrills
+                            </p>
+                        </div>
+                        <a href="" class="hover:text-black text-yellow-gold">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- Promo Sec ---------->
+        <section class="promo">
+            <div class="container flex flex-col gap-5 lg:gap-10 md:flex-row">
+                <!-- promo 1st -->
+                <div
+                    class="flex flex-col p-5 bg-white rounded-lg promo-1 dark:bg-primary-gray md:h-auto lg:h-56 md:flex-row-reverse md:flex-1 md:items-center md:gap-5">
+                    <img src="/assets/images/headphone11.png"
+                        class="w-40 mx-auto hover:animate-lavitate md:hover:animate-lavitate1 " alt="">
+                    <div class="mt-5">
+                        <p class="text-xs font-coolvetica dark:text-white">PayDay Special</p>
+                        <h2 class="mt-4 text-2xl font-coolvetica dark:text-white">PayDay Special: <br>Unlock 10%
+                            Discount!</h2>
+                        <p class="mt-2 text-xs font-outfit dark:text-white">Score 10% Off Gaming Gear Every PayDay.
+                            Limited Time Offer.
+                            Shop Now</p>
+                        <div class="mt-4">
+                            <a href="" class="text-sm text-yellow-gold">Buy Online</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- promo 2nd -->
+                <div
+                    class="flex flex-col p-5 bg-white rounded-lg promo-2 dark:bg-primary-gray md:h-auto lg:h-56 md:flex-row-reverse md:flex-1 md:items-center md:gap-5">
+                    <img src="/assets/images/mouse4.png"
+                        class="w-40 mx-auto hover:animate-lavitate md:hover:animate-lavitate1" alt="">
+                    <div class="mt-5">
+                        <p class="text-xs font-coolvetica dark:text-white ">PayDay Special</p>
+                        <h2 class="mt-4 text-2xl font-coolvetica dark:text-white ">PayDay Special: <br>Unlock 20%
+                            Discount!</h2>
+                        <p class="mt-2 text-xs font-outfit dark:text-white">Score 20% Off Gaming Gear Every PayDay.
+                            Limited Time
+                            Offer.<br> Shop Now</p>
+                        <div class="mt-4">
+                            <a href="" class="text-sm text-yellow-gold">Buy Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- Combo Sec ---------->
+        <section class="combo">
+            <div class="container flex flex-col items-center gap-10 lg:flex-row">
+                <div class="items-center flex-1">
+                    <img src="/assets/images/combo.jpg" class="rounded-lg lg:w-[90%] combo-img" alt="">
+                </div>
+                <div class="flex-1 combo-content dark:text-white">
+                    <h2 class="text-2xl font-coolvetica lg:text-4xl ">Ultimate Gaming Oasis: <br
+                            class="hidden lg:inline"> Everything You Need <br class="inline lg:hidden"> All in One Place
+                    </h2>
+                    <div class="w-36 mt-1 h-[2px] bg-yellow-gold  md:mx-0 "></div>
+                    <p class="mt-4 text-xs font-louis-george-cafe">Welcome to our Ultimate Gaming Oasis, your one-stop
+                        destination for all things <br class="hidden lg:inline"> gaming. Explore
+                        our curated selection of top-notch gear, from high-performance <br class="hidden lg:inline">
+                        mice and keyboards to immersive
+                        headphones.</p>
+                    <ul class="grid grid-cols-2 mt-4">
+                        <li class="text-sm"><i class="ri-check-line text-yellow-gold"></i>Best Price</li>
+                        <li class="text-sm"><i class="ri-check-line text-yellow-gold"></i>Fast Delivery</li>
+                        <li class="text-sm"><i class="ri-check-line text-yellow-gold"></i>Premium Quality</li>
+                        <li class="text-sm"><i class="ri-check-line text-yellow-gold"></i>Premium Quality</li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="px-6 py-4 text-sm font-black rounded-lg text-stroke font-louis-george-cafe hover:bg-yellow-500 bg-yellow-gold">Buy
+                            now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- Menu section ---------->
+        <section class="menu">
+            <div class="container dark:text-white">
+                <div class="max-w-md mx-auto text-center ">
+                    <h2 class="text-2xl font-coolvetica">Customer Review</h2>
+                    <div class="w-36 mt-1 h-[2px] bg-yellow-gold mx-auto md:mx-30 "></div>
+                    <p class="text-sm font-louis-george-cafe">Find Your Favorites
+                        and Game On</p>
+                    <div class="selcet-btns">
+                        <ul class="flex flex-wrap justify-center gap-2 py-10 dark:text-white">
+                            <li data-tabs="gadget"
+                                class="inline-block px-6 py-2 text-center duration-200 ease-linear bg-white rounded-md cursor-pointer dark:bg-primary-gray menu-btns active">
+                                All</li>
+                            <li data-tabs="keyboards"
+                                class="inline-block px-6 py-2 text-center duration-200 ease-linear bg-white rounded-md cursor-pointer dark:bg-primary-gray menu-btns">
+                                Keyboards</li>
+                            <li data-tabs="mouses"
+                                class="inline-block px-6 py-2 text-center duration-200 ease-linear bg-white rounded-md cursor-pointer dark:bg-primary-gray menu-btns">
+                                Mouse</li>
+                            <li data-tabs="headphones"
+                                class="inline-block px-6 py-2 text-center duration-200 ease-linear bg-white rounded-md cursor-pointer dark:bg-primary-gray menu-btns">
+                                Heaphones</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-main">
+                    <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+                        <!-- mouses -->
+                        <li class="gadget mouses">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/mouse1.png"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-36" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Aula H510 High Precision</h4>
+                                    <p class="mt-2 text-xs font-outfit">Wired Gaming Mouse, with 9 Programmable Side
+                                        Buttons,
+                                        RGB Backlight, 10,000 DPI Adjustable Game & Ergonomic Optical PC Computer Mice
+                                        (Black)</p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$12.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget mouses">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/mouse2.png"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-36" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">HXSJ S200 Gaming Mouse</h4>
+                                    <p class="mt-2 text-xs font-outfit">HXSJ S200 Wired USB 1600 DPI Optical Gaming
+                                        Mouse 4 Buttons Computer Game Office 3 Adjustable DPI LED Lights Mice For PC
+                                        Laptop</p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$19.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget mouses">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/mouse3.png"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-52" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">YINDIAO G5 Gaming Mouse</h4>
+                                    <p class="mt-2 text-xs font-outfit">YINDIAO G5 Wired Gaming Mouse 6D 3200DPI RGB
+                                        Gaming Mouse Computer Laptop Optical Game
+                                        Mouse</p>
+                                </div>
+                                <p class="text-xs font-louis-george-cafe text-yellow-gold">$11.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget mouses">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/mouse4.png"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-36" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">G.SKILL RIPJAWS MX780</h4>
+                                    <p class="mt-2 text-xs font-outfit">G.SKILL RIPJAWS MX780 Cutting Edge Ambidextrous
+                                        RGB 8200 DPI Laser Gaming Mouse with Adjustable Grips, Height, and Weights</p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$15.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget mouses">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/mouse5.png"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-44" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Logitech G402 Hyperion Fury </h4>
+                                    <p class="mt-2 text-xs font-outfit">Logitech G402 Hyperion Fury Wired Gaming Mouse,
+                                        4,000 DPI, Lightweight, 8 Programmable Buttons, Compatible with PC/Mac - Black
+                                    </p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$12.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget mouses">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/mouse6.png"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-44" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Glorious Race Model D</h4>
+                                    <p class="mt-2 text-xs font-outfit">HXSJ S200 Wired USB Gaming Mouse. With 1600 DPI
+                                        precision, 4 customizable buttons, and adjustable LED lights, conquer every
+                                        challenge</p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$16.00</p>
+                            </div>
+                        </li>
+                        <!-- keyboards -->
+                        <li class="gadget keyboards">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/keyboard1.jpeg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-50" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Havit Wired Keyboard</h4>
+                                    <p class="mt-2 text-xs font-outfit">LED Rainbow Backlit Gaming Keyboard RGB 104 Keys
+                                        Keyboard Mouse 4800 DPI for Windows & Mac PC
+                                        Gamers (Black) </p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$19.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget keyboards">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/keyboard2.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-50" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">MSI Vigor GK20</h4>
+                                    <p class="mt-2 text-xs font-outfit">MSI Vigor GK20 US Backlit RGB Wired Dedicated
+                                        Hotkeys Anti-Ghosting Water Resistant Gaming
+                                        Keyboard Black
+                                    </p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$20.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget keyboards">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/keyboard3.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-56" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">HYPERX ALLOY</h4>
+                                    <p class="mt-2 text-xs font-outfit">HyperX Alloy origins 65 mechanical Wired Gaming
+                                        keyboard switch
+                                        Compact 60% Size (Black)
+                                    </p>
+                                </div>
+                                <p class="mt-8 text-xs font-louis-george-cafe text-yellow-gold">$22.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget keyboards">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/keyboard4.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-50" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Asus TUF Gaming K1 RGB</h4>
+                                    <p class="mt-2 text-xs font-outfit">Asus TUF Gaming K1 RGB Wireless Mechanical
+                                        Keyboard with dedicated volume knob, spill-resistance, side light bar and
+                                        Armoury Crate</p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$35.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget keyboards">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/keyboard5.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-50" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Redragon Usas K553</h4>
+                                    <p class="mt-2 text-xs font-outfit">Redragon Usas K553 Wireless or wired Mechanical
+                                        Gaming Keyboard (Black)
+                                    </p>
+                                </div>
+                                <p class="mt-8 text-xs font-louis-george-cafe text-yellow-gold">$18.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget keyboards">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/keyboard6.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-40" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">G92 One-handed</h4>
+                                    <p class="mt-2 text-xs font-outfit">G92 One-handed Gaming Membrane keyboard
+                                        Ergonomic Keypad for Laptop Desktop PC Computer
+                                    </p>
+                                </div>
+                                <p class="mt-4 text-xs lg:mt-8 font-louis-george-cafe text-yellow-gold">$20.00</p>
+                            </div>
+                        </li>
+                        <!-- headphones -->
+                        <li class="gadget headphones">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/headphone11.png"
+                                    class="w-32 duration-200 ease-linear hover:scale-110 md:w-36 lg:w-36" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">VersionTech Stereo
+                                        HeadsetVersionTech Stereo Headset</h4>
+                                    <p class="mt-2 text-xs font-outfit">Gaming Headset Over-Ear Headphones with
+                                        Microphone, LED lights, Volume Control for Mac PC Computer Game
+                                        -Orange
+                                    </p>
+                                </div>
+                                <p class="mt-4 text-xs font-louis-george-cafe text-yellow-gold">$28.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget headphones">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/headphone2.png"
+                                    class="w-32 duration-200 ease-linear hover:scale-110 md:w-36 lg:w-36" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Gaming Headset For PS4</h4>
+                                    <p class="mt-2 text-xs font-outfit">VersionTech KOTION EACH G2000 USB 3.5mm Game
+                                        Stereo Bass for PS4 PC Computer Laptop Mobile
+                                        Phones - Blue</p>
+                                </div>
+                                <p class="mt-4 text-xs lg:mt-10 font-louis-george-cafe text-yellow-gold">$22.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget headphones">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/heaphone3.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-44" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">G06 Gaming Headset</h4>
+                                    <p class="mt-2 text-xs font-outfit">Headset with Microphone for PS5, PS4, PC, Mac,
+                                        3-in-1 Gamer Headphones 2.4GHz Wireless Bluetooth Mode
+                                        for Switch, Wired Mode for Controller
+                                    </p>
+                                </div>
+                                <p class="mt-4 text-xs lg:mt-10 font-louis-george-cafe text-yellow-gold">$32.00</p>
+                            </div>
+                        </li>
+                        <li class="gadget headphones">
+                            <div class="grid h-56 bg-white place-items-center dark:bg-primary-gray rounded-3xl ">
+                                <img src="/assets/images/headphone4.jpg"
+                                    class="w-40 duration-200 ease-linear hover:scale-110 md:w-48 lg:w-40" alt="">
+                            </div>
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="text-base font-semibold font-outfit">Acinaci Gaming Headset</h4>
+                                    <p class="mt-2 text-xs font-outfit">Detachable Noise Cancelling Microphone, 2.4G
+                                        Bluetooth - USB - 3.5mm 3 Modes W ireless Gaming Headphones for PC, PS4, PS5,
+                                        Mac, Switch, Phone
+                                    </p>
+                                </div>
+                                <p class="mt-8 text-xs lg:mt-10 font-louis-george-cafe text-yellow-gold">$30.00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---------- Review ---------->
+        <section class=" review">
+            <div class="container ">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="text-2xl font-coolvetica">Our Gadgets</h2>
+                    <div class="w-36 mt-1 h-[2px] bg-yellow-gold mx-auto md:mx-30 "></div>
+                    <p class="mt-2 text-sm font-louis-george-cafe">Find Your Favorites and Game On</p>
+                </div>
+                <div class="py-10 swiper">
+                    <ul class="mt-4 swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div
+                                class="flex flex-col gap-5 p-6 bg-white rounded-lg dark:text-white dark:bg-primary-gray">
+                                <p class="text-xs font-louis-george-cafe">
+                                    The Glorious PC Gaming Race Model D exceeded my expectations. Its ergonomic design
+                                    fits
+                                    like a glove, enhancing my precision and comfort during extended gaming sessions. A
+                                    true
+                                    game-changer
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/pfp1.jpg" class="object-cover w-12 h-12 rounded-full"
+                                        alt="">
+                                    <div class="ml-4 text-xs">
+                                        <p class="text-sm">Emily Johnson</p>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                    <div><i class="ml-16 text-4xl md:ml-10 text-yellow-gold ri-double-quotes-r"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class="flex flex-col gap-5 p-6 bg-white rounded-lg dark:text-white dark:bg-primary-gray">
+                                <p class="text-xs font-louis-george-cafe">
+                                    The Glorious PC Gaming Race Model D exceeded my expectations. Its ergonomic design
+                                    fits like a glove, enhancing my precision and comfort during extended gaming
+                                    sessions. A true game-changer
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/pfp2.jpg" class="object-cover w-12 h-12 rounded-full"
+                                        alt="">
+                                    <div class="ml-4 text-xs">
+                                        <p class="text-sm">Michael Lee </p>
+                                        <p>Software Engineer</p>
+                                    </div>
+                                    <div><i class="ml-16 text-4xl md:ml-10 text-yellow-gold ri-double-quotes-r"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class="flex flex-col gap-5 p-6 bg-white rounded-lg dark:text-white dark:bg-primary-gray">
+                                <p class="text-xs font-louis-george-cafe">
+                                    The Glorious PC Gaming Race Model D exceeded my expectations. Its ergonomic design
+                                    fits
+                                    like a glove, enhancing my precision and comfort during extended gaming sessions. A
+                                    true
+                                    game-changer
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/pfp3.jpg" class="object-cover w-12 h-12 rounded-full"
+                                        alt="">
+                                    <div class="ml-4 text-xs">
+                                        <p class="text-sm">Ethan Brown
+                                        </p>
+                                        <p>Web Developer</p>
+                                    </div>
+                                    <div><i class="ml-16 text-4xl md:ml-10 text-yellow-gold ri-double-quotes-r"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class="flex flex-col gap-5 p-6 bg-white rounded-lg dark:text-white dark:bg-primary-gray">
+                                <p class="text-xs font-louis-george-cafe">
+                                    The Glorious PC Gaming Race Model D exceeded my expectations. Its ergonomic design
+                                    fits
+                                    like a glove, enhancing my precision and comfort during extended gaming sessions. A
+                                    true
+                                    game-changer
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/pfp4.jpg" class="object-cover w-12 h-12 rounded-full"
+                                        alt="">
+                                    <div class="ml-4 text-xs">
+                                        <p class="text-sm">William Rodriguez</p>
+                                        <p>Product Manager</p>
+                                    </div>
+                                    <div><i class="ml-16 text-4xl md:ml-8 text-yellow-gold ri-double-quotes-r"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class="flex flex-col gap-5 p-6 bg-white rounded-lg dark:text-white dark:bg-primary-gray">
+                                <p class="text-xs font-louis-george-cafe">
+                                    The Glorious PC Gaming Race Model D exceeded my expectations. Its ergonomic design
+                                    fits
+                                    like a glove, enhancing my precision and comfort during extended gaming sessions. A
+                                    true
+                                    game-changer
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/pfp5.jpg" class="object-cover w-12 h-12 rounded-full"
+                                        alt="">
+                                    <div class="ml-4 text-xs">
+                                        <p class="text-sm">Emily Johnson</p>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                    <div><i class="ml-16 text-4xl md:ml-10 text-yellow-gold ri-double-quotes-r"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div
+                                class="flex flex-col gap-5 p-6 bg-white rounded-lg dark:text-white dark:bg-primary-gray">
+                                <p class="text-xs font-louis-george-cafe">
+                                    The Glorious PC Gaming Race Model D exceeded my expectations. Its ergonomic design
+                                    fits
+                                    like a glove, enhancing my precision and comfort during extended gaming sessions. A
+                                    true
+                                    game-changer
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/pfp6.jpg" class="object-cover w-12 h-12 rounded-full"
+                                        alt="">
+                                    <div class="ml-4 text-xs">
+                                        <p class="text-sm">Olivia Nguyen </p>
+                                        <p>Data Scientist</p>
+                                    </div>
+                                    <div><i class="ml-16 text-4xl md:ml-10 text-yellow-gold ri-double-quotes-r"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mt-12">
+                        <div class=" swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Contact --------->
+        <section class="py-16 contact bg-yellow-gold h-1/2">
+            <div class="container flex flex-col gap-5 md:flex-row md:items-center">
+                <div class="space-y-4 md:flex-1">
+                    <h2 class="text-2xl md:text-3xl font-coolvetica">Get Exclusive Update</h2>
+                    <p class="text-xs text-white font-louis-george-cafe">Subscribe us for getting latest updates</p>
+                </div>
+                <div class="flex flex-col gap-3 md:flex-row md:flex-1 ">
+                    <input type="email" placeholder="Email Address"
+                        class="p-2 text-black rounded-lg outline-none md:w-full" name="" id="">
+                    <a href=""
+                        class="flex items-center justify-center h-8 gap-2 text-white rounded-lg md:w-40 lg:w-48 bg-primary-color-dark">
+                        <i class="ri-send-plane-fill"></i>
+                        Subscribe
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--------- Footer --------->
+        <footer class="mt-4 footer">
+            <div class="container dark:text-white">
+                <ul class="grid items-start grid-cols-1 gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+                    <li>
+                        <div class="space-y-3">
+                            <a href="" class="text-4xl font-batanges">
+                                Tech.<span class="text-yellow-gold">Gear</span>
+                            </a>
+                            <p class="w-56 text-xs font-louis-george-cafe">At Tech.Gear, find premium gaming gear to
+                                elevate
+                                your experience. Your ultimate destination for all things gaming starts here!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-xl uppercase hover:text-yellow-gold font-outfit">
+                                Support
+                            </h3>
+                            <a href="" class="text-xs hover:text-yellow-gold font-louis-george-cafe">FAQ's</a>
+                            <a href="" class="text-xs hover:text-yellow-gold font-louis-george-cafe">Privacy Policy</a>
+                            <a href="" class="text-xs hover:text-yellow-gold font-louis-george-cafe">Term &
+                                Condition</a>
+                            <a href="" class="text-xs hover:text-yellow-gold font-louis-george-cafe">Contact</a>
+                        </div>
+                    </li>
+                    <li class="space-y-8">
+                        <div class="space-y-2">
+                            <h3 class="text-xl uppercase hover:text-yellow-gold font-outfit ">
+                                Phone
+                            </h3>
+                            <p class="text-xs hover:text-yellow-gold font-louis-george-cafe">
+                                <i class="text-yellow-gold ri-phone-fill"></i>
+                                +91 8077571779
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl uppercase hover:text-yellow-gold font-outfit ">
+                                Email
+                            </h3>
+                            <p class="text-xs hover:text-yellow-gold font-louis-george-cafe">
+                                <i class="fa-solid fa-envelope text-yellow-gold"></i>
+                                satyam321tomar@gmail.com
+                            </p>
+                        </div>
+                    <li>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl uppercase hover:text-yellow-gold font-outfit ">
+                                Address
+                            </h3>
+                            <a href="">
+                                <p class="text-xs hover:text-yellow-gold font-louis-george-cafe">
+                                    <i class="fa-solid fa-location-dot text-yellow-gold"></i>
+                                    Tap here
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mt-4 space-y-2">
+                            <h3 class="text-xl uppercase hover:text-yellow-gold font-outfit ">
+                                Follow Us
+                            </h3>
+                            <a href="" class="text-sm">
+                                <i
+                                    class="duration-100 ease-in text-yellow-gold fa-brands fa-instagram hover:-translate-y-1"></i>
+                            </a>
+                            <a href="" class="ml-2 text-sm ">
+                                <i
+                                    class="duration-100 ease-in text-yellow-gold fa-brands fa-twitter hover:-translate-y-1"></i>
+                            </a>
+                            <a href="" class="ml-2 text-sm ">
+                                <i
+                                    class="duration-100 ease-in text-yellow-gold fa-brands fa-facebook-f hover:-translate-y-1 "></i>
+                            </a>
+                        </div>
+                    </li>
+                    </li>
+                </ul>
+                <div class="flex flex-col items-center py-5 border-t border-yellow-gold md:flex-row md:justify-between">
+                    <p class="text-xs font-louis-george-cafe">Tech.Gear project by Satyam Stelllar</p>
+                    <p class="text-xs font-louis-george-cafe">Copyright © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <a href="#"
+            class="fixed z-50 hidden px-[14px] py-2 text-lg text-black duration-100 ease-in rounded-full shadow-sm right-4 bottom-4 bg-yellow-gold hover:-translate-y-1"
+            id="scroll-btn">
+            <i class="ri-arrow-up-line"></i> </a>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://kit.fontawesome.com/d2816e204d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+
+
+</html>

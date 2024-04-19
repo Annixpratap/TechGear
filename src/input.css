@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        @apply scroll-smooth;
+    }
+    section {
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@font-face {
+    font-family: 'Batanges';
+    src: url('/assets/fonts/Batangas.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/assets/fonts/coolvetica.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Guardians';
+    src: url('/assets/fonts/Guardians.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis-George-Cafe';
+    src: url('/assets/fonts/louis-george-cafe.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Moonrising';
+    src: url('/asset/fonts/Moonrising-GOogy.woff2') format('woff2');
+}
+
+.selcet-btns ul li:hover,
+.selcet-btns ul li.active {
+    @apply bg-yellow-gold;
+}
