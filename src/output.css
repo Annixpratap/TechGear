@@ -623,16 +623,8 @@ section{
   position: relative;
 }
 
-.-bottom-1\/2{
-  bottom: -50%;
-}
-
 .-bottom-3{
   bottom: -0.75rem;
-}
-
-.-bottom-4{
-  bottom: -1rem;
 }
 
 .-bottom-6{
@@ -643,12 +635,12 @@ section{
   left: -0.5rem;
 }
 
-.-left-4{
-  left: -1rem;
+.-left-6{
+  left: -1.5rem;
 }
 
-.-left-8{
-  left: -2rem;
+.bottom-4{
+  bottom: 1rem;
 }
 
 .left-0{
@@ -665,18 +657,6 @@ section{
 
 .top-2{
   top: 0.5rem;
-}
-
-.-left-6{
-  left: -1.5rem;
-}
-
-.bottom-1\/2{
-  bottom: 50%;
-}
-
-.bottom-4{
-  bottom: 1rem;
 }
 
 .z-50{
@@ -788,6 +768,10 @@ section{
   width: 5rem;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .w-36{
   width: 9rem;
 }
@@ -804,8 +788,8 @@ section{
   width: 15rem;
 }
 
-.w-64{
-  width: 16rem;
+.w-72{
+  width: 18rem;
 }
 
 .w-auto{
@@ -814,18 +798,6 @@ section{
 
 .w-full{
   width: 100%;
-}
-
-.w-72{
-  width: 18rem;
-}
-
-.w-32{
-  width: 8rem;
-}
-
-.w-28{
-  width: 7rem;
 }
 
 .max-w-md{
@@ -1017,14 +989,14 @@ section{
   padding: 1.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-\[14px\]{
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .py-1{
@@ -1060,26 +1032,6 @@ section{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.px-\[15px\]{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.px-\[14px\]{
-  padding-left: 14px;
-  padding-right: 14px;
 }
 
 .pb-5{
@@ -1295,16 +1247,16 @@ section{
     margin-right: 0px;
   }
 
-  .md\:ml-auto{
-    margin-left: auto;
-  }
-
   .md\:ml-10{
     margin-left: 2.5rem;
   }
 
   .md\:ml-8{
     margin-left: 2rem;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
   }
 
   .md\:block{
@@ -1323,6 +1275,10 @@ section{
     height: auto;
   }
 
+  .md\:w-36{
+    width: 9rem;
+  }
+
   .md\:w-40{
     width: 10rem;
   }
@@ -1337,14 +1293,6 @@ section{
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:w-36{
-    width: 9rem;
-  }
-
-  .md\:w-32{
-    width: 8rem;
   }
 
   .md\:flex-1{
@@ -1438,6 +1386,14 @@ section{
     width: 9rem;
   }
 
+  .lg\:w-40{
+    width: 10rem;
+  }
+
+  .lg\:w-44{
+    width: 11rem;
+  }
+
   .lg\:w-48{
     width: 12rem;
   }
@@ -1446,16 +1402,8 @@ section{
     width: 13rem;
   }
 
-  .lg\:w-44{
-    width: 11rem;
-  }
-
   .lg\:w-56{
     width: 14rem;
-  }
-
-  .lg\:w-40{
-    width: 10rem;
   }
 
   .lg\:w-\[90\%\]{
